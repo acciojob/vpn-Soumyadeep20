@@ -6,5 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ServiceProviderRepository extends JpaRepository<ServiceProvider, Integer> {
-    public ServiceProvider findByName(String name);
+
+
+    ServiceProvider findServiceProviderByName(String name);
 }
